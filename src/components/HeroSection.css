@@ -1,0 +1,298 @@
+.hero {
+  background-color: var(--bg-secondary);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0; /* Không có khoảng cách giữa text và hình */
+}
+
+/* Hero Text Section */
+.hero-text {
+  padding-right: 0;
+  max-width: 520px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+.hero-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.feature-item:before {
+  content: "●";
+  color: #e74c3c;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-top: -2px;
+  flex-shrink: 0;
+}
+
+/* Thay đổi màu nút thành #3293d5 */
+.hero-btn {
+  background-color: #3293d5;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #2578b5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(50, 147, 213, 0.3);
+}
+
+/* Hero Image Section */
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  max-width: 580px;
+}
+
+/* Language Bubbles */
+.language-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.bubble {
+  position: absolute;
+  background: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bubble-1 {
+  top: 25%;
+  left: 15%;
+  background: #ff6b6b;
+  animation-delay: 0s;
+}
+
+.bubble-2 {
+  top: 15%;
+  right: 10%;
+  background: #ff9a9e;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 12px;
+  animation-delay: 0.5s;
+}
+
+.bubble-3 {
+  top: 65%;
+  left: 25%;
+  background: #67b26f;
+  color: #fff;
+  animation-delay: 1s;
+}
+
+.bubble-4 {
+  top: 45%;
+  right: 25%;
+  background: #4ecdc4;
+  animation-delay: 1.5s;
+}
+
+.bubble-5 {
+  bottom: 20%;
+  right: 15%;
+  background: #ff9a9e;
+  color: #fff;
+  animation-delay: 2s;
+}
+
+/* Thêm các bubble mới */
+.bubble-6 {
+  top: 8%;
+  left: 35%;
+  background: #6c5ce7;
+  color: #fff;
+  animation-delay: 0.3s;
+}
+
+.bubble-7 {
+  bottom: 15%;
+  left: 8%;
+  background: #e84393;
+  color: #fff;
+  animation-delay: 1.7s;
+}
+
+.bubble-8 {
+  top: 35%;
+  right: 8%;
+  background: #00b894;
+  color: #fff;
+  animation-delay: 0.8s;
+}
+
+.bubble-9 {
+  top: 75%;
+  right: 30%;
+  background: #fdcb6e;
+  color: #2d3436;
+  animation-delay: 2.3s;
+}
+
+/* Animation cho bubbles */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animation cho các bubble khác nhau */
+.bubble:nth-child(odd) {
+  animation-name: float-left;
+}
+
+.bubble:nth-child(even) {
+  animation-name: float-right;
+}
+
+@keyframes float-left {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes float-right {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-8px) translateX(5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 44px;
+  }
+  
+  .hero-image {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+  
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-text {
+    padding-right: 0;
+    max-width: none;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .feature-item {
+    text-align: left;
+    justify-content: center;
+  }
+  
+  .bubble {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 30px;
+  }
+  
+  .feature-item {
+    font-size: 14px;
+  }
+  
+  .hero-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}

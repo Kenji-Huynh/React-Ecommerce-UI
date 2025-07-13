@@ -1,0 +1,42 @@
+.favorites-icon {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorites-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.favorites-symbol {
+  font-size: 20px;
+  color: inherit;
+}
+
+.favorites-icon:hover .favorites-symbol {
+  color: #e74c3c;
+}
+
+.favorites-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+  border: 2px solid white;
+}

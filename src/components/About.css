@@ -1,0 +1,318 @@
+/* --- VARIABLES & BASE --- */
+/* Các biến này sẽ được override từ theme.css khi dark mode được bật */
+
+.about-pro {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--pro-bg);
+  color: var(--pro-text);
+}
+
+.about-pro-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --- HERO SECTION --- */
+.about-pro-hero {
+  padding: 96px 0;
+  background-color: var(--pro-bg-alt);
+}
+
+.hero-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.hero-tagline {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--pro-primary);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.hero-main-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.5px;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--pro-text-light);
+  margin-bottom: 40px;
+}
+
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-main-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px -10px rgba(0, 82, 204, 0.15);
+}
+
+/* --- MISSION SECTION --- */
+.about-pro-mission {
+  padding: 80px 0;
+  background-color: var(--pro-bg);
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.mission-card {
+  padding: 32px;
+  border-left: 4px solid var(--pro-primary);
+  background-color: var(--pro-bg-alt);
+  border-radius: 0 8px 8px 0;
+}
+
+.mission-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: var(--pro-primary);
+}
+
+.mission-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--pro-text-light);
+  margin: 0;
+}
+
+/* --- SHARED SECTION HEADER --- */
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 64px auto;
+}
+
+.section-tagline {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pro-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: var(--pro-text-light);
+  line-height: 1.6;
+}
+
+/* --- APPROACH SECTION --- */
+.about-pro-approach {
+  padding: 96px 0;
+  background-color: var(--pro-bg-alt);
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.pillar-card {
+  background-color: var(--pro-bg);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid var(--pro-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px -8px rgba(0, 82, 204, 0.1);
+}
+
+.pillar-icon {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.pillar-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.pillar-description {
+  font-size: 16px;
+  color: var(--pro-text-light);
+  line-height: 1.6;
+}
+
+/* --- TEAM SECTION --- */
+.about-pro-team {
+  padding: 96px 0;
+  background-color: var(--pro-bg);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.team-member-card {
+  text-align: center;
+}
+
+.team-member-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+  box-shadow: 0 0 0 8px var(--pro-bg-alt);
+}
+
+.team-member-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.team-member-role {
+  font-size: 16px;
+  color: var(--pro-primary);
+}
+
+/* --- CTA SECTION --- */
+.about-pro-cta {
+  background-color: var(--pro-bg-alt);
+  padding: 80px 0;
+}
+
+.cta-container {
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  color: var(--pro-text-light);
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* --- BUTTONS (ĐÃ SỬA LỖI) --- */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.btn-primary-pro {
+  background-color: var(--pro-primary);
+  color: var(--pro-white); /* Sửa lỗi: Sử dụng biến màu trắng đã định nghĩa */
+}
+
+.btn-primary-pro:hover {
+  background-color: #0041a3;
+  transform: translateY(-2px);
+}
+
+.btn-secondary-pro {
+  background-color: var(--pro-bg); /* Sửa lỗi: Sử dụng biến nền trắng */
+  color: var(--pro-text);
+  border-color: var(--pro-border);
+}
+
+.btn-secondary-pro:hover {
+  border-color: var(--pro-text);
+  transform: translateY(-2px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .hero-content-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-image-wrapper {
+    grid-row: 1;
+    margin-bottom: 48px;
+  }
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-pro-hero {
+    padding: 70px 0;
+  }
+  
+  .hero-main-title {
+    font-size: 36px;
+  }
+  
+  .approach-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-pro-hero {
+    padding: 50px 0;
+  }
+  
+  .hero-main-title {
+    font-size: 28px;
+  }
+  
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+}

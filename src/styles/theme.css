@@ -1,0 +1,99 @@
+:root {
+  /* Light theme colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #2c3e50;
+  --text-secondary: #64748b;
+  --accent-primary: #3498db;
+  --accent-secondary: #2980b9;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --header-bg: #000000;
+  --header-text: #ecf0f1;
+  --shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Footer variables */
+  --footer-bg: #1a202c;
+  --footer-bg-light: #2d3748;
+  --footer-text: #e2e8f0;
+  --footer-text-light: #a0aec0;
+  --footer-accent: #3182ce;
+  --footer-accent-hover: #2c5aa0;
+  --footer-border: #4a5568;
+  
+  /* Product card variables */
+  --product-desc: #7f8c8d;
+  --product-tag-bg: #ecf0f1;
+  --product-tag-text: #34495e;
+  --product-price: #e74c3c;
+  --product-price-old: #95a5a6;
+  --star-default: #ddd;
+  --star-filled: #f39c12;
+  --heart-color: #e74c3c;
+  
+  /* Contact form variables */
+  --contact-primary: #3498db;
+  --contact-success: #2ecc71;
+  --contact-error: #e74c3c;
+  
+  /* About page variables */
+  --pro-primary: #0052cc;
+  --pro-primary-light: #f0f6ff;
+  --pro-text: #344054;
+  --pro-text-light: #667085;
+  --pro-bg: #ffffff;
+  --pro-bg-alt: #f9fafb;
+  --pro-border: #eaecf0;
+  --pro-white: #ffffff;
+}
+
+body.dark-mode {
+  /* Dark theme colors */
+  --bg-primary: #1a202c;
+  --bg-secondary: #2d3748;
+  --bg-tertiary: #4a5568;
+  --text-primary: #e2e8f0;
+  --text-secondary: #a0aec0;
+  --accent-primary: #63b3ed;
+  --accent-secondary: #4299e1;
+  --border-color: #4a5568;
+  --card-bg: #2d3748;
+  --header-bg: #121212;
+  --header-text: #e2e8f0;
+  --shadow: rgba(0, 0, 0, 0.3);
+  
+  /* Footer variables - dark mode */
+  --footer-bg: #0f141e;
+  --footer-bg-light: #1a202c;
+  --footer-text: #e2e8f0;
+  --footer-text-light: #a0aec0;
+  --footer-accent: #63b3ed;
+  --footer-accent-hover: #4299e1;
+  --footer-border: #2d3748;
+  
+  /* Product card variables - dark mode */
+  --product-desc: #a0aec0;
+  --product-tag-bg: #4a5568;
+  --product-tag-text: #e2e8f0;
+  --product-price: #fc8181;
+  --product-price-old: #718096;
+  --star-default: #4a5568;
+  --star-filled: #f6ad55;
+  --heart-color: #fc8181;
+  
+  /* Contact form variables - dark mode */
+  --contact-primary: #63b3ed;
+  --contact-success: #68d391;
+  --contact-error: #fc8181;
+  
+  /* About page variables - dark mode */
+  --pro-primary: #63b3ed;
+  --pro-primary-light: #1a365d;
+  --pro-text: #e2e8f0;
+  --pro-text-light: #a0aec0;
+  --pro-bg: #1a202c;
+  --pro-bg-alt: #2d3748;
+  --pro-border: #4a5568;
+  --pro-white: #1a202c; /* đảo ngược màu nền cho nút */
+}

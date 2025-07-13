@@ -1,7 +1,22 @@
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 const OPENAI_API_URL = "https://api.openai.com/v1/chat/completions";
 
+// Kiểm tra xem API key có tồn tại không
+if (!OPENAI_API_KEY) {
+  console.warn('OpenAI API key not found. Chatbot functionality will be limited.');
+}
+
 export const chatWithAI = async (userMessage, products) => {
+  // Kiểm tra API key trước khi gọi API
+  if (!OPENAI_API_KEY) {
+    return {
+      message: "Xin lỗi, tính năng chatbot hiện tại không khả dụng. Vui lòng liên hệ với chúng tôi để được hỗ trợ.",
+      suggestedProducts: [],
+      keywords: [],
+      reasoning: "API key không được cấu hình"
+    };
+  }
+
   // Chuẩn bị context sản phẩm
   const productsContext = products.map(product => ({
     id: product.id,
